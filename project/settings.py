@@ -151,6 +151,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+# default bootstrap that comes with crispy_forms is 2
+# here we are telling django that we want to use bootstrap4
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
