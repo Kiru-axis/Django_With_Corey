@@ -9,7 +9,7 @@ posts = [
     "content": "There is more than what you see",
     "date_posted": "January 23 2021"
     },
-    {"title": "Black is powered by",
+    {"title": "Black is power",
     "author": "Mercy Cheyech",
     "content": "just explore deeper",
     "date_posted": "February 2 2021"
@@ -23,7 +23,12 @@ posts = [
 
 # view functions
 def home(request):
-    return render(request,"blog/home.html")
+    context = {
+        "posts":posts,
+        "title":"Home Page"
+        
+    }
+    return render(request,"blog/home.html",context)
 
 def about(request):
     return render(request,"blog/about.html")
