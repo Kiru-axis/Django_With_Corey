@@ -51,12 +51,12 @@
     <!-- end landing page -->
     
     {% if messages %}
-    {%endif %}
       {%for message in messages %}
-      <div class="alert alert-{{ message.tags}}">
-        {{message}}
-      </div>
+        <div class="alert alert-{{ message.tags}}">
+            {{message}}
+        </div>
       {%endfor %}
+    {%endif %}
     {% block content %}
 
     {% endblock %}
