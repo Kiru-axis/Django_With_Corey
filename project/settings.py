@@ -183,9 +183,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 django_heroku.settings(locals())
 
 # redirects
-# LOGIN_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = 'blog-home'
 
-# LOGOUT_REDIRECT_URL = 'login'
+# LOGOUT_REDIRECT_URL = ''
 
 # handling registration emails
 # Email configurations remember to install python-decouple
