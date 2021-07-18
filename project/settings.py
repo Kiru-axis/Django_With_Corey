@@ -185,7 +185,7 @@ django_heroku.settings(locals())
 # redirects
 LOGIN_REDIRECT_URL = 'blog-home'
 
-# LOGOUT_REDIRECT_URL = ''
+LOGIN_REDIRECT_URL = 'users-login'
 
 # handling registration emails
 # Email configurations remember to install python-decouple
